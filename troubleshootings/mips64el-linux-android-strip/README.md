@@ -135,6 +135,11 @@ Install Gradle 4.4 (or higher version), then modify the below files.
     }
   }
   ```
+- **platforms/android/cordova/lib/builders/GradleBuilder.js & StudioBuilder.js**
+
+```
+var distributionUrl = process.env['CORDOVA_ANDROID_GRADLE_DISTRIBUTION_URL'] || 'https\\://services.gradle.org/distributions/gradle-4.4-all.zip';
+```
 
 Then try again.
 
